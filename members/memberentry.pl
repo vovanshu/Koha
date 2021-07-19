@@ -293,6 +293,8 @@ if ( ( defined $newdata{'userid'} && $newdata{'userid'} eq '' ) || $check_Borrow
         # Full page edit, firstname and surname input zones are present
         $fake_patron->firstname($newdata{firstname});
         $fake_patron->surname($newdata{surname});
+        $fake_patron->cardnumber($newdata{cardnumber});
+        $fake_patron->branchcode($newdata{branchcode});
         $fake_patron->generate_userid;
         $newdata{'userid'} = $fake_patron->userid;
     }
@@ -302,6 +304,8 @@ if ( ( defined $newdata{'userid'} && $newdata{'userid'} eq '' ) || $check_Borrow
         # FIXME clean thiscode newdata vs data is very confusing
         $fake_patron->firstname($data{firstname});
         $fake_patron->surname($data{surname});
+        $fake_patron->cardnumber($data{cardnumber});
+        $fake_patron->branchcode($data{branchcode});
         $fake_patron->generate_userid;
         $newdata{'userid'} = $fake_patron->userid;
     }

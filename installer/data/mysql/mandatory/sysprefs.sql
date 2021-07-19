@@ -732,5 +732,7 @@ INSERT INTO systempreferences ( `variable`, `value`, `options`, `explanation`, `
 ('XSLTListsDisplay','default','','Enable XSLT stylesheet control over lists pages display on intranet','Free'),
 ('XSLTResultsDisplay','default','','Enable XSL stylesheet control over results page display on intranet','Free'),
 ('z3950AuthorAuthFields','701,702,700',NULL,'Define the MARC biblio fields for Personal Name Authorities to fill biblio.author','free'),
-('z3950NormalizeAuthor','0','','If ON, Personal Name Authorities will replace authors in biblio.author','YesNo')
+('z3950NormalizeAuthor','0','','If ON, Personal Name Authorities will replace authors in biblio.author','YesNo'),
+('generate_userid_bycardnumber', '0', '', 'Generate userid by cardnumber', 'YesNo'),
+('IndependentLibraryMemberNum', '0', '', 'If ON, patron number is auto-calculated for each library independet', 'YesNo')
 ;

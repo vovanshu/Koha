@@ -225,6 +225,18 @@ Patrons:
            class: multi
          - (separate multiple choices with |)
      -
+         - pref: generate_userid_bycardnumber
+           choices:
+               1: Yes
+               0: No
+         - 'Generate username by cardnumber'
+     -
+         - pref: IndependentLibraryMemberNum
+           choices:
+               1: Yes
+               0: No
+         - 'If ON, patron number is auto-calculated for each library independet'
+     -
          - pref: autoMemberNum
            choices:
                1: Do
